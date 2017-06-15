@@ -1,0 +1,5 @@
+D:\MyProject\ShePaiWareHouseManage\Model\bin\Debug\Model.dll
+D:\MyProject\ShePaiWareHouseManage\Model\bin\Debug\Model.pdb
+D:\MyProject\ShePaiWareHouseManage\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\MyProject\ShePaiWareHouseManage\Model\obj\Debug\Model.dll
+D:\MyProject\ShePaiWareHouseManage\Model\obj\Debug\Model.pdb
