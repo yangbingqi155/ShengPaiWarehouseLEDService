@@ -35,6 +35,9 @@
             this.txtMessages = new System.Windows.Forms.TextBox();
             this.btnTurnOffLED = new System.Windows.Forms.Button();
             this.btnTurnOnLED = new System.Windows.Forms.Button();
+            this.btnShowSN = new System.Windows.Forms.Button();
+            this.btnDisplayNumber = new System.Windows.Forms.Button();
+            this.btnSendOrder = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmbPorts
@@ -77,11 +80,11 @@
             // 
             // txtMessages
             // 
-            this.txtMessages.Location = new System.Drawing.Point(3, 64);
+            this.txtMessages.Location = new System.Drawing.Point(3, 85);
             this.txtMessages.Multiline = true;
             this.txtMessages.Name = "txtMessages";
             this.txtMessages.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMessages.Size = new System.Drawing.Size(799, 463);
+            this.txtMessages.Size = new System.Drawing.Size(799, 442);
             this.txtMessages.TabIndex = 3;
             // 
             // btnTurnOffLED
@@ -104,11 +107,44 @@
             this.btnTurnOnLED.UseVisualStyleBackColor = true;
             this.btnTurnOnLED.Click += new System.EventHandler(this.btnTurnOnLED_Click);
             // 
+            // btnShowSN
+            // 
+            this.btnShowSN.Location = new System.Drawing.Point(634, 14);
+            this.btnShowSN.Name = "btnShowSN";
+            this.btnShowSN.Size = new System.Drawing.Size(75, 23);
+            this.btnShowSN.TabIndex = 6;
+            this.btnShowSN.Text = "显示序列号";
+            this.btnShowSN.UseVisualStyleBackColor = true;
+            this.btnShowSN.Click += new System.EventHandler(this.btnShowSN_Click);
+            // 
+            // btnDisplayNumber
+            // 
+            this.btnDisplayNumber.Location = new System.Drawing.Point(715, 14);
+            this.btnDisplayNumber.Name = "btnDisplayNumber";
+            this.btnDisplayNumber.Size = new System.Drawing.Size(104, 23);
+            this.btnDisplayNumber.TabIndex = 7;
+            this.btnDisplayNumber.Text = "显示数字6666";
+            this.btnDisplayNumber.UseVisualStyleBackColor = true;
+            this.btnDisplayNumber.Click += new System.EventHandler(this.btnDisplayNumber_Click);
+            // 
+            // btnSendOrder
+            // 
+            this.btnSendOrder.Location = new System.Drawing.Point(246, 52);
+            this.btnSendOrder.Name = "btnSendOrder";
+            this.btnSendOrder.Size = new System.Drawing.Size(169, 23);
+            this.btnSendOrder.TabIndex = 8;
+            this.btnSendOrder.Text = "发送测试订单(数量为:100)";
+            this.btnSendOrder.UseVisualStyleBackColor = true;
+            this.btnSendOrder.Click += new System.EventHandler(this.btnSendOrder_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(848, 539);
+            this.Controls.Add(this.btnSendOrder);
+            this.Controls.Add(this.btnDisplayNumber);
+            this.Controls.Add(this.btnShowSN);
             this.Controls.Add(this.btnTurnOnLED);
             this.Controls.Add(this.btnTurnOffLED);
             this.Controls.Add(this.txtMessages);
@@ -132,6 +168,9 @@
         private System.Windows.Forms.TextBox txtMessages;
         private System.Windows.Forms.Button btnTurnOffLED;
         private System.Windows.Forms.Button btnTurnOnLED;
+        private System.Windows.Forms.Button btnShowSN;
+        private System.Windows.Forms.Button btnDisplayNumber;
+        private System.Windows.Forms.Button btnSendOrder;
     }
 }
 

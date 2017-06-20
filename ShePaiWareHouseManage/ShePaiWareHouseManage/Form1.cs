@@ -82,5 +82,20 @@ namespace ShePaiWareHouseManage
         {
             port.SendData("turn_on");
         }
+
+        private void btnShowSN_Click(object sender, EventArgs e)
+        {
+            port.SendData("SN");
+        }
+
+        private void btnDisplayNumber_Click(object sender, EventArgs e)
+        {
+            port.SendData("test_number|6666");
+        }
+
+        private void btnSendOrder_Click(object sender, EventArgs e)
+        {
+            port.SendData("receive_order|0002-0004/100");
+        }
     }
 }

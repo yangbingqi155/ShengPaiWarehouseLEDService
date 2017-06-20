@@ -11,3 +11,16 @@ D:\MyProject\ShePaiWareHouseManage\ShePaiWareHouseManage\bin\Debug\Model.dll
 D:\MyProject\ShePaiWareHouseManage\ShePaiWareHouseManage\bin\Debug\Utils.dll
 D:\MyProject\ShePaiWareHouseManage\ShePaiWareHouseManage\bin\Debug\Model.pdb
 D:\MyProject\ShePaiWareHouseManage\ShePaiWareHouseManage\bin\Debug\Utils.pdb
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\bin\Debug\ShePaiWareHouseManage.exe.config
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\obj\Debug\ShePaiWareHouseManage.exe
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\obj\Debug\ShePaiWareHouseManage.pdb
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\bin\Debug\ShePaiWareHouseManage.exe
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\bin\Debug\ShePaiWareHouseManage.pdb
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\bin\Debug\Model.dll
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\bin\Debug\Utils.dll
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\bin\Debug\Model.pdb
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\bin\Debug\Utils.pdb
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\obj\Debug\ShePaiWareHouseManage.csprojResolveAssemblyReference.cache
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\obj\Debug\ShePaiWareHouseManage.Form1.resources
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\obj\Debug\ShePaiWareHouseManage.Properties.Resources.resources
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\obj\Debug\ShePaiWareHouseManage.csproj.GenerateResource.Cache
