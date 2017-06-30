@@ -15,6 +15,7 @@ namespace ShePaiWareHouseManage
 {
     public partial class Form1 : Form
     {
+        private List<SerialPortEntity> ports = null;
         private SerialPortEntity port = null;
         public Form1()
         {

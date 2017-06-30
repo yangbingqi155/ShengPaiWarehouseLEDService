@@ -9,8 +9,25 @@ namespace Model
 {
     public class SerialPortEntity
     {
+        /// <summary>
+        /// 设备编号
+        /// </summary>
+        public string SN { get; set; }
 
-        public SerialPort Port { get; set; }
+        private SerialPort Port { get; set; }
+
+        
+        public void SerialDataReceived(object sender, SerialDataReceivedEventArgs e);
+
+        public void DataReceived(SerialDataReceived serialDataReceived) {
+            this.Port.DataReceived += serialDataReceived(,);
+        }
+
+        public string PortName {
+            get {
+                return this.Port.PortName;
+            }
+        }
 
         /// <summary>
         /// 初始化串口实例
