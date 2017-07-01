@@ -15,7 +15,6 @@ namespace ShePaiWareHouseManage
 {
     public partial class Form1 : Form
     {
-        private List<SerialPortEntity> ports = null;
         private SerialPortEntity port = null;
         public Form1()
         {
@@ -25,8 +24,8 @@ namespace ShePaiWareHouseManage
 
         public void DataBindPorts() {
             cmbPorts.DataSource= SerialPortHelper.GetSerialPorts();
-            //cmbPorts.Items("请选择串口设备");
-            cmbPorts.SelectedIndex = 0;
+            //cmbPorts.Items.Insert(0, "请选择串口设备");
+            //cmbPorts.SelectedIndex = 0;
         }
         
 
@@ -65,13 +64,14 @@ namespace ShePaiWareHouseManage
 
         private void cmbPorts_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(cmbPorts.SelectedValue.ToString())) {
-                port = new SerialPortEntity();
-                port.Init(cmbPorts.SelectedValue.ToString());
-                port.Port.DataReceived += SerialDataReceived;
+            string portName = cmbPorts.SelectedValue.ToString();
+            if (!string.IsNullOrEmpty(portName) && portName != "请选择串口设备") {
+                if (!SerialPortsThread.Exists(portName)) {
+                    SerialPortsThread.AddPort(portName);
+                    SerialPortsThread.Get(portName).SerialDataReceived += SerialDataReceived;
+                }
+                port = SerialPortsThread.Get(portName);
             }
-            
-            
         }
 
         private void btnTurnOffLED_Click(object sender, EventArgs e)

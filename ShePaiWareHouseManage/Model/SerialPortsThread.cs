@@ -26,10 +26,10 @@ namespace Model
                     ports.Add(entity);
                     result = true;
                 }
-                else
-                {
-                    throw new Exception(string.Format("串口设备({0})已经存在。",portName));
-                }
+                //else
+                //{
+                //    throw new Exception(string.Format("串口设备({0})已经存在。",portName));
+                //}
             }
             catch (Exception ex) {
                 throw new Exception("添加新串口设备失败");
@@ -69,8 +69,7 @@ namespace Model
                 ports.Remove(Get(portName));
                 result = true;
             }
-            else
-            {
+            else {
                 throw new Exception(string.Format("串口设备({0})不存在。", portName));
             }
             return result;

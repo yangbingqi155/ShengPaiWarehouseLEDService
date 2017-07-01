@@ -3,3 +3,8 @@ D:\MyProject\ShePaiWareHouseManage\Utils\bin\Debug\Utils.pdb
 D:\MyProject\ShePaiWareHouseManage\Utils\obj\Debug\Utils.csprojResolveAssemblyReference.cache
 D:\MyProject\ShePaiWareHouseManage\Utils\obj\Debug\Utils.dll
 D:\MyProject\ShePaiWareHouseManage\Utils\obj\Debug\Utils.pdb
+F:\MyCode\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Utils\bin\Debug\Utils.dll
+F:\MyCode\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Utils\bin\Debug\Utils.pdb
+F:\MyCode\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Utils\obj\Debug\Utils.csprojResolveAssemblyReference.cache
+F:\MyCode\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Utils\obj\Debug\Utils.dll
+F:\MyCode\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Utils\obj\Debug\Utils.pdb
