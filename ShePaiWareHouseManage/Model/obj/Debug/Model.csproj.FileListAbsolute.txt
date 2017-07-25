@@ -8,3 +8,8 @@ F:\MyCode\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\bin\Debug\Mode
 F:\MyCode\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 F:\MyCode\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\obj\Debug\Model.dll
 F:\MyCode\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\obj\Debug\Model.pdb
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\bin\Debug\Model.dll
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\bin\Debug\Model.pdb
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\obj\Debug\Model.dll
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\obj\Debug\Model.pdb

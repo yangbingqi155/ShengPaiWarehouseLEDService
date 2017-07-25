@@ -15,13 +15,11 @@ namespace Model
         public string SN { get; set; }
 
         private SerialPort Port { get; set; }
-        
-        public event SerialDataReceivedEventHandler SerialDataReceived;
 
         /// <summary>
         /// 绑定数据接收事件
         /// </summary>
-        private void BindDataReceived() {
+        public void BindDataReceived(SerialDataReceivedEventHandler SerialDataReceived) {
             this.Port.DataReceived += SerialDataReceived;
         }
 
@@ -40,9 +38,9 @@ namespace Model
             {
                 Port = new SerialPort(portName, 9600);
                 Port.Encoding = Encoding.ASCII;
-                Port.Open();
                 //绑定数据接收事件
-                BindDataReceived();
+                //BindDataReceived();
+                Port.Open();
             }
             catch (Exception ex)
             {

@@ -37,3 +37,5 @@ F:\MyCode\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManag
 F:\MyCode\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\obj\Debug\ShePaiWareHouseManage.Form1.resources
 F:\MyCode\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\obj\Debug\ShePaiWareHouseManage.Properties.Resources.resources
 F:\MyCode\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\obj\Debug\ShePaiWareHouseManage.csproj.GenerateResource.Cache
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\bin\Debug\Message.dll
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\ShePaiWareHouseManage\bin\Debug\Message.pdb

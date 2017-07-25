@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO.Ports;
 using Model;
 using Utils;
+using Message;
 
 namespace ShePaiWareHouseManage
 {
@@ -68,7 +69,8 @@ namespace ShePaiWareHouseManage
             if (!string.IsNullOrEmpty(portName) && portName != "请选择串口设备") {
                 if (!SerialPortsThread.Exists(portName)) {
                     SerialPortsThread.AddPort(portName);
-                    SerialPortsThread.Get(portName).SerialDataReceived += SerialDataReceived;
+                    //SerialPortsThread.Get(portName).SerialDataReceived += SerialDataReceived;
+                    SerialPortsThread.Get(portName).BindDataReceived(SerialDataReceived);
                 }
                 port = SerialPortsThread.Get(portName);
             }
@@ -76,27 +78,27 @@ namespace ShePaiWareHouseManage
 
         private void btnTurnOffLED_Click(object sender, EventArgs e)
         {
-            port.SendData("turn_off");
+            port.SendData(MessageConst.TURN_OFF);
         }
 
         private void btnTurnOnLED_Click(object sender, EventArgs e)
         {
-            port.SendData("turn_on");
+            port.SendData(MessageConst.TURN_ON);
         }
 
         private void btnShowSN_Click(object sender, EventArgs e)
         {
-            port.SendData("SN");
+            port.SendData(MessageConst.SN);
         }
 
         private void btnDisplayNumber_Click(object sender, EventArgs e)
         {
-            port.SendData("test_number|6666");
+            port.SendData(MessageConst.SHOW_NUMBER+"|6666");
         }
 
         private void btnSendOrder_Click(object sender, EventArgs e)
         {
-            port.SendData("receive_order|0002-0004/100");
+            port.SendData(MessageConst.SEND_ORDER_PRODUCT+"|0002-0004/100");
         }
     }
 }

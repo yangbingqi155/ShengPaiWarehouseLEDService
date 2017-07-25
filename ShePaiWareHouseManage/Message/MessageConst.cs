@@ -29,7 +29,7 @@ namespace Message
         /// 显示数字
         /// 命令格式为:test_number|数字
         /// </summary>
-        public const string SHOW_NUMBER = "test_number";
+        public const string SHOW_NUMBER = "show_number";
 
         /// <summary>
         /// 发送订单信息到设备

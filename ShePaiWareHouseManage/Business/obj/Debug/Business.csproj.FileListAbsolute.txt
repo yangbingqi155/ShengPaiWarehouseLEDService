@@ -1,0 +1,5 @@
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Business\bin\Debug\Business.dll
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Business\bin\Debug\Business.pdb
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Business\obj\Debug\Business.dll
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Business\obj\Debug\Business.pdb
