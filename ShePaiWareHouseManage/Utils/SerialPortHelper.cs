@@ -20,7 +20,12 @@ namespace Utils
             List<string> ports = new List<string>(); 
             string[] serialPorts= SerialPort.GetPortNames();
             if (serialPorts!=null&& serialPorts.Count()>0) {
-                ports = serialPorts.ToList();
+                foreach (var item in serialPorts)
+                {
+                    //if (item.Contains("CH340")) {
+                        ports.Add(item);
+                    //}
+                }
             }
             return ports;
         }

@@ -44,6 +44,16 @@
     <Compile Include="SerialPortEntity.cs" />
     <Compile Include="SerialPortsThread.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Message\Message.csproj">
+      <Project>{aa176cae-c56a-4b05-b4a1-bc02b4d32155}</Project>
+      <Name>Message</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{dec92b7f-832f-4f0d-8b68-e14b62ce1379}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

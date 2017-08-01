@@ -20,7 +20,10 @@ namespace ShePaiWareHouseManage
         public Form1()
         {
             InitializeComponent();
+            //绑定串口下拉框
             DataBindPorts();
+            //初始化所有串口
+            SerialPortsThread.InitALLPorts(SerialDataReceived);
         }
 
         public void DataBindPorts() {
@@ -33,24 +36,41 @@ namespace ShePaiWareHouseManage
         /// <summary>
         /// 在读取到数据时刷新文本框的信息
         /// </summary>
-        private void RefreshInfoTextBox()
+        private void RefreshInfoTextBox(string portName)
         {
-            string value = port.ReadData();
+            SerialPortEntity port = SerialPortsThread.Get(portName);
+            string display = string.Empty;
+            string message = port.ReadData();
+            //根据消息做相应的处理
+            //如果是抓货完成，关闭LED，接收到订单的相关信息
+            if (message.IndexOf(MessageConst.SEND_ORDER_PRODUCT) >= 0) {
+                //消息格式为:send_order|订单号-产品编号/订购数量
+
+                //处理订单逻辑
+
+                display = port.PortName + ":订单信息-" + message.Split('|')[1];
+            }//如果消息是设备序列号，格式为:sn|设备序列号
+            else if (message.IndexOf(MessageConst.SN) >= 0) {
+                port.SN = message.Split('|')[1];
+                display = port.PortName + ":设备序列号-" + message.Split('|')[1];
+            }
+
             Action<string> setValueAction = text => this.txtMessages.Text += text;
 
             if (this.txtMessages.InvokeRequired)
             {
-                this.txtMessages.Invoke(setValueAction, value);
+                this.txtMessages.Invoke(setValueAction, display);
             }
             else
             {
-                setValueAction(value);
+                setValueAction(display);
             }
         }
 
         private void SerialDataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            RefreshInfoTextBox();
+            SerialPort port =(SerialPort) sender;
+            RefreshInfoTextBox(port.PortName);
         }
 
         private void btnSend_Click(object sender, EventArgs e)
@@ -67,11 +87,6 @@ namespace ShePaiWareHouseManage
         {
             string portName = cmbPorts.SelectedValue.ToString();
             if (!string.IsNullOrEmpty(portName) && portName != "请选择串口设备") {
-                if (!SerialPortsThread.Exists(portName)) {
-                    SerialPortsThread.AddPort(portName);
-                    //SerialPortsThread.Get(portName).SerialDataReceived += SerialDataReceived;
-                    SerialPortsThread.Get(portName).BindDataReceived(SerialDataReceived);
-                }
                 port = SerialPortsThread.Get(portName);
             }
         }

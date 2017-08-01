@@ -13,3 +13,7 @@ D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\bin\Debug\M
 D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\obj\Debug\Model.dll
 D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\obj\Debug\Model.pdb
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\bin\Debug\Message.dll
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\bin\Debug\Utils.dll
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\bin\Debug\Message.pdb
+D:\MyProject\ShengPaiWarehouseLEDService\ShePaiWareHouseManage\Model\bin\Debug\Utils.pdb
